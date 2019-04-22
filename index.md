@@ -5,4 +5,4 @@
 
 ## 标准化文档
 
-- [小招通线上操作指引](/STD_online_operating_guidelines/)
+- [小招通线上操作指引](/pages/STD_online_operating_guidelines.md)
