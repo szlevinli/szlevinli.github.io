@@ -1,3 +1,25 @@
 .current {
   color: green;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1hr);
+  grid-template-rows: 100vh;
+  border: solid 2px red;
+  margin: 10px;
+}
+
+.item {
+
+}
+
+aside {
+  grid-column: span 2;
+  background-color: yellow;
+}
+
+main {
+  grid-column: span 10;
+  background-color: blue;
+}
