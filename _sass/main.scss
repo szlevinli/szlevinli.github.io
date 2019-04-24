@@ -4,22 +4,28 @@
 
 .container {
   display: grid;
-  grid-template-columns: repeat(12, 1hr);
-  grid-template-rows: 100vh;
-  border: solid 2px red;
+  grid-template-columns: repeat(12, 1fr);
+
+  height: 90vh;
   margin: 10px;
-}
-
-.item {
-
 }
 
 aside {
   grid-column: span 2;
-  background-color: yellow;
+  background-color: blanchedalmond;
+
+  overflow: auto;
 }
 
 main {
   grid-column: span 10;
-  background-color: blue;
+
+  overflow: auto;
+  margin-left: 30px;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 10px;
+  padding-left: 0px;
 }
