@@ -4,7 +4,7 @@ layout: default
 
 # 社区创建规则-品牌层
 
-![ ]({{ '/assets/images/op_man/dashbroad_for_all_brand.png' | prepend: site.baseurl }}){:.img-fluid}{:.img-fluid}
+![ ]({{ '/assets/images/op_man/dashbroad_for_all_brand.png' | prepend: site.baseurl }}){:.img-fluid}
 
 ## 社区命名规则
 
