@@ -1,6 +1,9 @@
 {
   "header": [
-    {"name": "Home", "link": "#"},
-    {"name": "Documents", "link": "#"}
+    {"name": "Home", "link": "/index"},
+    {"name": "Documents", "link": "/pages/zxt_operation_manual"}
+  ],
+  "sidebar": [
+    {"name": "后台操作手册", "link": "/pages/zxt_operation_manual"}
   ]
 }

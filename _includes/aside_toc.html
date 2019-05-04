@@ -5,37 +5,13 @@
     d-none d-xl-block：联合使用的意思是，在 xl 断点以下隐藏。即非 desktop 显示设备均隐藏（包括手机、平板等）
   -->
   <nav class="navbar navbar-light">
-    <ul class="navbar-nav flex-column>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-001</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-002</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-003</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-004</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-005</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-006</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-007</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-008</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-009</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-010</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-011</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-012</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-013</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-014</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-015</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-016</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-017</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-018</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-019</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-020</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-021</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-022</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-023</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-024</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-025</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-026</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-027</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-028</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Toc-029</a></li>
-    </ul>
+      {% include toc.html html=include.m_content
+        sanitize=true
+        class="navbar-nav flex-column"
+        item_class="nav-item"
+        anchor_class="nav-link"
+        id="my_toc"
+        h_min=1 h_max=2 %}
   </nav>
 
 </aside>

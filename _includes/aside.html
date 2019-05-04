@@ -11,35 +11,9 @@
 
     <div class="collapse navbar-collapse" id="asideNavbarNavDropdown">
       <ul class="navbar-nav flex-column">
-        <li class="nav-item"><a href="#" class="nav-link">Link001</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link002</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link003</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link004</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link005</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link006</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link007</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link008</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link009</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link010</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link011</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link012</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link013</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link014</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link015</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link016</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link017</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link018</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link019</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link020</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link021</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link022</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link023</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link024</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link025</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link026</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link027</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link028</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Link029</a></li>
+        {% for link in site.data.links['sidebar'] %}
+          <li class="nav-item"><a href="{{ link.link | prepend: site.baseurl }}" class="nav-link">{{ link.name }}</a></li>
+        {% endfor %}
       </ul>
     </div>
   </nav>
