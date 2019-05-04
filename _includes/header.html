@@ -1,0 +1,20 @@
+<header class="navbar navbar-expand-md navbar-dark bg-dark position-sticky fixed-top ck-header">
+  <!-- <a href="#" class="navbar-brand">招商创库</a> -->
+  <a class="navbar-brand" href="#">
+    <img src="assets/images/ck-logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    招商创库
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+    {% for link in site.data.links['header'] %}
+      <li class="nav-item"><a href="{{ link.link }}" class="nav-link">{{ link.name }}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+</header>

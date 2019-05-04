@@ -1,0 +1,45 @@
+$header-height: 4rem;
+
+.ck-header {
+  min-height: $header-height;
+  z-index: 1500;
+  // position: -webkit-sticky;
+}
+
+.ck-sidebar {
+  height: 4rem;
+  order: 0;
+  top: $header-height;
+  z-index: 1000;
+  // position: -webkit-sticky;
+}
+
+.ck-toc {
+  order: 2;
+  top: $header-height;
+  // position: -webkit-sticky;
+}
+
+.ck-main {
+  order: 1;
+}
+
+@include media-breakpoint-up(md) {
+  .ck-sidebar {
+    height: calc(100vh - #{$header-height});
+    overflow-y: auto;
+  }
+
+  .ck-toc {
+    height: calc(100vh - #{$header-height});
+    overflow-y: auto;
+  }
+}
+
+#aside {
+  border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+#toc {
+  border-left: 1px solid rgba(0, 0, 0, .1);
+}
