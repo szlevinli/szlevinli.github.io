@@ -16,6 +16,8 @@ exclude:
   - package-lock.json
   - yarn.lock
   - index.html
+  - Gemfile
+  - Gemfile.lock
 
 plugins:
   - octopress-autoprefixer
