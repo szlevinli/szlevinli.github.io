@@ -3,7 +3,6 @@ source "https://rubygems.org"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "octopress-autoprefixer"
-  gem 'jekyll-compress-images'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
